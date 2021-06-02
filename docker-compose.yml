@@ -1,0 +1,30 @@
+version: '3'
+services:
+  db:
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./db/:/root/db/
+
+  frontend: # Name of our service
+    build: ./frontend # path to dockerfile
+    ports: # Port binding to host from docker container
+      - "8080:8080" # Bind port 3000 of host to 3000 of container
+    container_name: frontend-docker
+    restart: always # What to do if container crashes
+    links:
+      - backend
+    command: http-server dist
+
+  backend:
+    build: ./backend
+    container_name: backend-docker
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ./db/:/db/
+    command: uvicorn app.main:app --host 0.0.0.0 --port 80
