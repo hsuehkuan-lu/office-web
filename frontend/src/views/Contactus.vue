@@ -52,12 +52,17 @@ export default {
     information: [
       {
         "icon": "mdi-phone",
-        "value": "(03) 216-0363",
+        "value": "03-2160363",
         "title": "電話"
       },
       {
+        "icon": "mdi-phone",
+        "value": "09-33031296",
+        "title": "行動電話"
+      },
+      {
         "icon": "mdi-fax",
-        "value": "(03) 216-0727",
+        "value": "03-2160727",
         "title": "傳真"
       },
       {
