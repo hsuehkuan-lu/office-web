@@ -37,10 +37,11 @@
 
             <v-list-item-avatar
                 tile
-                height="350"
-                width="280"
+                height="35%"
+                width="35%"
             >
               <v-img
+                  :aspect-ratio="3/4"
                   :src="item.image"
               ></v-img>
             </v-list-item-avatar>
