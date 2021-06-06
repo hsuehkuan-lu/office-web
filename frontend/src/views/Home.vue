@@ -1,27 +1,48 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
-        <h1
-            class="text-center"
-            v-bind:style="styleObject"
-        >{{ name }}</h1>
-      </v-col>
+    <v-row class="d-none d-sm-flex">
+      <v-row>
+        <v-col>
+          <h1
+              class="text-center"
+              v-bind:style="styleObject"
+          >{{ name }}</h1>
+        </v-col>
+      </v-row>
+      <v-row class="mt-3">
+        <v-col>
+          <p v-html="introductionText">
+            {{introductionText}}
+          </p>
+          <p class="text-center" v-bind:style="{fontSize: '22px'}"><strong>祝福大家 幸福圓滿</strong></p>
+          <p class="text-right">所長 <strong>呂理銘</strong></p>
+        </v-col>
+        <v-col>
+          <v-img
+              aspect-ratio="1.5"
+              src="@/assets/images/shake-hands.jpg"
+          ></v-img>
+        </v-col>
+      </v-row>
     </v-row>
-    <v-row class="mt-3">
-      <v-col>
-        <p v-html="introductionText">
-          {{introductionText}}
-        </p>
-        <p class="text-center" v-bind:style="{fontSize: '22px'}"><strong>祝福大家 幸福圓滿</strong></p>
-        <p class="text-right">所長 <strong>呂理銘</strong></p>
-      </v-col>
-      <v-col>
-        <v-img
-            aspect-ratio="1.5"
-            src="@/assets/images/shake-hands.jpg"
-        ></v-img>
-      </v-col>
+    <v-row class="d-sm-none">
+      <v-row>
+        <v-col>
+          <h1
+              class="text-center"
+              v-bind:style="styleObject"
+          >{{ name }}</h1>
+        </v-col>
+      </v-row>
+      <v-row class="ma-1">
+        <v-col>
+          <p v-html="introductionText">
+            {{introductionText}}
+          </p>
+          <p class="text-center" v-bind:style="{fontSize: '22px'}"><strong>祝福大家 幸福圓滿</strong></p>
+          <p class="text-right">所長 <strong>呂理銘</strong></p>
+        </v-col>
+      </v-row>
     </v-row>
   </v-container>
 </template>
