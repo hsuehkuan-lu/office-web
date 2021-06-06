@@ -81,8 +81,8 @@
               class="text-center"
           >地址</h1>
         </v-col>
-        <v-col cols="12">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8255209248464!2d121.28367871471977!3d25.006044045566075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f0ab1f6b65b%3A0x9688546a5b9f6d86!2zMzMw5qGD5ZyS5biC5qGD5ZyS5Y2A5ZyL6Zqb6Lev5LqM5q61NTU56JmfMw!5e0!3m2!1szh-TW!2stw!4v1622298266729!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <v-col cols="12" class="align-center text-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.8255209248464!2d121.28367871471977!3d25.006044045566075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f0ab1f6b65b%3A0x9688546a5b9f6d86!2zMzMw5qGD5ZyS5biC5qGD5ZyS5Y2A5ZyL6Zqb6Lev5LqM5q61NTU56JmfMw!5e0!3m2!1szh-TW!2stw!4v1622983070407!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </v-col>
       </v-row>
     </div>

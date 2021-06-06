@@ -73,7 +73,10 @@
       </v-app-bar>
     </div>
     <div class="d-sm-none">
-      <v-app-bar>
+      <v-app-bar
+          color="white"
+          dark
+      >
         <v-app-bar-nav-icon color="black" @click="drawer = true"></v-app-bar-nav-icon>
 
         <v-row class="d-flex ml-0">

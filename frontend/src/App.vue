@@ -10,7 +10,7 @@
 
 <style>
 .myFont {
-  font-family: 'Mansalva', cursive;
+    font-family: cursive;
 }
 </style>
 
