@@ -34,8 +34,8 @@ services:
     restart: always # What to do if container crashes
     networks:
       - mynet
-    expose:
-      - 8080
+    ports:
+      - 8080:8080
     command: http-server dist
 
   backend:
