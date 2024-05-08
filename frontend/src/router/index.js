@@ -47,6 +47,17 @@ const routes = [
       title: Global.firmName + ' - 聯絡我們'
     }
   },
+  {
+    path: '/specialization',
+    name: 'Specialization',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Specilization.vue'),
+    meta: {
+      title: Global.firmName + ' - 專業領域'
+    }
+  },
 ]
 
 const router = new VueRouter({
